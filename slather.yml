@@ -1,0 +1,10 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+xcodeproj: PlayformTVOS.xcodeproj
+workspace: PlayformTVOS.xcworkspace
+scheme: PlayformTVOS
+output_directory: reports 
+ignore:
+  - Pods/*
+  - PlayformTVOSTests/*

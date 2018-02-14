@@ -1,0 +1,81 @@
+/*
+ * Copyright (C) 2017 Mattel, Inc. All rights reserved.
+ *
+ * All information and code contained herein is the property of
+ * Mattel, Inc.
+ *
+ * Any unauthorized use, storage, duplication, and redistribution of
+ * this material without written permission from Mattel, Inc. is
+ * strictly prohibited.
+ *
+ *Localizable.strings
+ *
+ * Created by sue.liu on 2017/6/26.
+ */
+
+// MARK: - Settings UI
+// some text are not confirm yet
+"enter_user_account" = "Please enter account";
+"enter_user_email" = "Email Verified";
+"user_profile" = "User Profile";
+"create_kids" = "Create Kids Account";
+"privacy_statement" = "Privacy Statement";
+"your_account_title" = "Your Account";
+"kid_account_title" =  "Kid Accounts";
+"email_veri_title" = "Email Verification";
+"email_not_verified" = "Email Verified";
+"email_verified" = " Verify Now";
+
+"detail_user_profile_title" = "Your \nAccount";
+"detail_create_kids_title" = "Create \nKid \nAccount";
+"detail_kid_account_title" = "Kid \nAccounts";
+
+"date_later_than_today" = "Date is later than today. \nPlease enter again.";
+"wrong_nickName" = "The nickname has been used.";
+
+"firstname_hint" = "Please enter your first name.";
+"nickname_hint" = "Please enter a valid nickname.";
+"lastname_hint" = "Please enter your last name.";
+"Year_hint" = "Please enter a valid year";
+"Month_hint" = "Please enter a valid month (1-12).";
+"Day_hint" = "Please enter a valid date.";
+
+"hello" = "Hello";
+
+"invalid_year" = "You have entered an invalid year. Please try again";
+"invalid_month" = "You have entered an invalid month. Please try again";
+"invalid_date" = "You have entered an invalid date. Please try again";
+
+// MARK: - Popup
+"unable_To_Update" = "Unable to Update Information";
+"unable_To_Update_Description" = "There was a problem updating your information. \nPlease try again.";
+"tryAgain" = "Try Again";
+"cancel" =  "Cancel";
+
+"account_Create_success" = "Account Creation Successful";
+"your_account_Create_success" = "Your account has been successfully created.";
+"Continue_Editing" = "Continue Editing";
+"OK" =  "OK";
+
+"update_inform_fail_title" = "Unable to Update Information";
+"update_inform_fail" = "There was a problem updating your information. \nPlease try again.";
+
+"add_kids_fail_title" = "Unable to Add Kid";
+"add_kids_fail" = "We were unable to create kid account now. Please try again.";
+
+"error_unable_to_connect" = "Unable to Connect to Server";
+"error_unable_to_connect_subtitle" = "We are unable to connect to our Server. \nPlease try again. ";
+
+"Creating_Kid" = "Creating Account…";
+
+"Loading" = "Loading...";
+"unable_to_add_kid" = "Unable to Add Kid";
+"unable_to_add_kid_message" = "We are unable to create kid account now. Please try again.";
+"unable_to_connect_internet" = "Unable to Connect to Internet";
+"unable_to_connect_internet_message" = "We are unable to connect to the internet. Please check your device's internet \nconnection. ";
+
+// MARK: - Local Error
+"error_unable_to_save_user_profile" = "Unable to Save the User Profile.";
+"error_unable_to_create_kid_account" = "Unable to Create the Kid Account.";
+"error_unable_to_update_kid_account" = "Unable to Update the Kid Account.";
+"error_unable_to_delete_kid_account" = "Unable to Delete the Kid Account.";

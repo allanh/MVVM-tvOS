@@ -1,0 +1,73 @@
+# Rules for analyze
+# strict lint rules are introduced for improvement
+
+included:
+    - PlayformTVOS
+    - PlayformTVOSTests
+
+whitelist_rules:
+    # lint
+    ## List all
+    - class_delegate_protocol
+    - compiler_protocol_init
+    - discarded_notification_center_observer
+    - dynamic_inline
+    - mark
+    - notification_center_detachment # special cases that would stop observing, should we remove this?
+    - overridden_super_call # disabled by default
+    # - private_outlet # disabled by default
+    - private_unit_test
+    - prohibited_super_call # disabled by default
+    - todo
+    - unused_closure_parameter # good to specify complicated or multiple closure parameters, should we remove this?
+    - valid_ibinspectable
+    - weak_delegate
+
+    # metrics
+    ## List all (all enabled by default)
+    # - cyclomatic_complexity
+    # - file_length
+    # - function_body_length
+    # - function_parameter_count
+    # - large_tuple
+    # - line_length
+    - nesting
+    # - type_body_length # Our view is configured in VC not in IB files, can we explicitly set special tolerance for VCs?
+
+    # performance
+    ## List all (all disabled by default)
+    - empty_count
+    - first_where
+
+    # idiomatic
+    ## List enabled by default
+    - for_where
+    # - force_cast # Widely used while navigating, should we remove this?
+    - force_try
+    - generic_type_name
+    - legacy_cggeometry_functions
+    - legacy_constant
+    - legacy_constructor
+    - legacy_nsgeometry_functions
+    - object_literal # disabled by default
+    - private_over_fileprivate
+    - redundant_nil_coalescing # disabled by default
+    - redundant_optional_initialization
+    - redundant_string_enum_value
+    - redundant_void_return
+    - syntactic_sugar
+    - trailing_semicolon
+    - type_name
+    - unused_enumerated
+
+    # style
+
+large_tuple:
+    warning: 3
+    error: 5
+
+line_length:
+    warning: 150 # default: 120
+    error: 230  # default: 200
+    ignores_function_declarations: true
+    ignores_comments: true

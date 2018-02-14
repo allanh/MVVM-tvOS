@@ -1,0 +1,10 @@
+framework module PlayformSDK_TV {
+  umbrella header "PlayformSDK_TV.h"
+
+  export *
+  module * { export * }
+}
+
+module PlayformSDK_TV.Swift {
+    header "PlayformSDK_TV-Swift.h"
+}

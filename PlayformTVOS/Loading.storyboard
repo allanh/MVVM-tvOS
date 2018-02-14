@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="tOM-qU-SS7">
+            <objects>
+                <viewController storyboardIdentifier="LoadingViewController" id="g3A-x2-UKQ" customClass="LoadingViewController" customModule="PlayformTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iif-NH-Gjm"/>
+                        <viewControllerLayoutGuide type="bottom" id="FTI-zG-gGN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CM6-oa-qI9">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6vc-Lt-cMc">
+                                <rect key="frame" x="928" y="412" width="64" height="64"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CF-Fl-U5Q">
+                                <rect key="frame" x="876" y="358" width="169" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8CF-Fl-U5Q" firstAttribute="top" secondItem="iif-NH-Gjm" secondAttribute="bottom" constant="358" id="8Cj-oc-2ec"/>
+                            <constraint firstItem="8CF-Fl-U5Q" firstAttribute="centerX" secondItem="6vc-Lt-cMc" secondAttribute="centerX" id="TA1-Ib-TUN"/>
+                            <constraint firstItem="6vc-Lt-cMc" firstAttribute="top" secondItem="8CF-Fl-U5Q" secondAttribute="bottom" constant="8" symbolic="YES" id="thu-ZZ-Av1"/>
+                            <constraint firstItem="8CF-Fl-U5Q" firstAttribute="centerX" secondItem="CM6-oa-qI9" secondAttribute="centerX" id="xcD-B1-EtL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myIndicator" destination="6vc-Lt-cMc" id="fiB-DU-Dqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KeY-Z4-fC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="-77"/>
+        </scene>
+    </scenes>
+</document>

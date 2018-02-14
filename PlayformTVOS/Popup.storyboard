@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Two Button Popup View Controller-->
+        <scene sceneID="zC1-aT-435">
+            <objects>
+                <viewController storyboardIdentifier="TwoButtonPopupViewController" id="VIU-Jm-xje" customClass="TwoButtonPopupViewController" customModule="PlayformTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Me-j1-3OM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cuo-mR-LVm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GMg-qi-RQx">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main TitleMain TitleMain TitleMain TitleMain Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i9-X1-5WS">
+                                <rect key="frame" x="469" y="271" width="982" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.87607020550000003" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Title " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R34-c0-1QO">
+                                <rect key="frame" x="376" y="339" width="1114" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1114" id="j6m-0v-yQS"/>
+                                    <constraint firstAttribute="height" constant="137" id="vGq-se-EaT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuJ-wg-5Ot" customClass="RoundButton" customModule="PlayformTVOS" customModuleProvider="target">
+                                <rect key="frame" x="570" y="477" width="726" height="86"/>
+                                <color key="backgroundColor" white="1" alpha="0.79815924657534243" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="726" id="sPP-GL-twD"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="focusTitleColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didClickeButton:" destination="VIU-Jm-xje" eventType="primaryActionTriggered" id="ghu-ik-3nX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgj-2s-pTy" customClass="RoundButton" customModule="PlayformTVOS" customModuleProvider="target">
+                                <rect key="frame" x="570" y="578" width="726" height="86"/>
+                                <color key="backgroundColor" white="1" alpha="0.79815924657534243" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="focusTitleColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didClickeButton:" destination="VIU-Jm-xje" eventType="primaryActionTriggered" id="jfB-BE-Sm2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.83591074486301364" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DuJ-wg-5Ot" firstAttribute="centerX" secondItem="R34-c0-1QO" secondAttribute="centerX" id="0EK-v8-CEc"/>
+                            <constraint firstItem="DuJ-wg-5Ot" firstAttribute="leading" secondItem="Vgj-2s-pTy" secondAttribute="leading" id="AEM-tG-vij"/>
+                            <constraint firstItem="Cuo-mR-LVm" firstAttribute="top" secondItem="Vgj-2s-pTy" secondAttribute="bottom" constant="416" id="BwQ-fv-wyQ"/>
+                            <constraint firstItem="DuJ-wg-5Ot" firstAttribute="trailing" secondItem="Vgj-2s-pTy" secondAttribute="trailing" id="SyF-8A-9N4"/>
+                            <constraint firstItem="7i9-X1-5WS" firstAttribute="centerX" secondItem="GMg-qi-RQx" secondAttribute="centerX" id="ZZD-gu-Q6y"/>
+                            <constraint firstItem="7i9-X1-5WS" firstAttribute="top" secondItem="8Me-j1-3OM" secondAttribute="bottom" constant="271" id="cOu-Lu-k9c"/>
+                            <constraint firstItem="R34-c0-1QO" firstAttribute="top" secondItem="7i9-X1-5WS" secondAttribute="bottom" constant="15" id="fd3-Uv-gAR"/>
+                            <constraint firstItem="R34-c0-1QO" firstAttribute="leading" secondItem="GMg-qi-RQx" secondAttribute="leading" constant="376" id="gsD-JS-FNG"/>
+                            <constraint firstItem="DuJ-wg-5Ot" firstAttribute="top" secondItem="R34-c0-1QO" secondAttribute="bottom" constant="1" id="xGo-3w-wot"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Vgj-2s-pTy" id="Wei-Ti-k8n"/>
+                        <outlet property="confirmButton" destination="DuJ-wg-5Ot" id="Mit-hT-M4x"/>
+                        <outlet property="descriptionLabel" destination="R34-c0-1QO" id="dA0-Js-TAN"/>
+                        <outlet property="titleLabel" destination="7i9-X1-5WS" id="Jgv-lq-Qnz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pK5-hO-Qyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455" y="-12"/>
+        </scene>
+    </scenes>
+</document>

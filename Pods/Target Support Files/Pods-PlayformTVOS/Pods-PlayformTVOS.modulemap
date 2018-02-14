@@ -1,0 +1,6 @@
+framework module Pods_PlayformTVOS {
+  umbrella header "Pods-PlayformTVOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
